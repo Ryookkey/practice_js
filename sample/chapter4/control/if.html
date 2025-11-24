@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script>
+            // 割引対象かどうか確認する関数
+            function checkSale(price) {
+                // 条件分岐
+                if (price >= 2000) {
+                    // 価格が2000円以上
+                    console.log(`${price}円は、割引対象です`);
+                } else {
+                    // 価格が2000円未満
+                    console.log(`${price}円は、割引対象ではありません`);
+                }
+            }
+
+            // 価格の確認
+            checkSale(1800);
+            checkSale(1900);
+            checkSale(2000);
+            checkSale(2100);
+        </script>
+    </body>
+</html>

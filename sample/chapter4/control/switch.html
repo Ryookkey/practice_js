@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // メニューから値段を得る関数
+            function getPrice(menu) {
+                // 戻り値用の変数
+                let res;
+
+                // 条件分岐
+                switch(menu) {
+                    case 'ホットコーヒー':
+                    case 'アイスコーヒー':
+                    case '紅茶':
+                        // ホットコーヒー、アイスコーヒー、紅茶は450円
+                        res = 450;
+                        break;
+
+                    case 'チョコパフェ':
+                    case 'フルーツパフェ':
+                        // チョコパフェ、フルーツパフェは800円
+                        res = 800;
+                        break;
+                    default:
+                        // その他は500円
+                        res = 500;
+                }
+
+                // 得た価格を戻す
+                return res;
+            }
+
+            // 価格確認
+            console.log('ホットコーヒー', getPrice('ホットコーヒー'));
+            console.log('アイスコーヒー', getPrice('アイスコーヒー'));
+            console.log('チョコパフェ', getPrice('チョコパフェ'));
+            console.log('サンドイッチ', getPrice('サンドイッチ'));
+        </script>
+    </body>
+</html>
