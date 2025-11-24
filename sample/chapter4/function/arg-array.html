@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // 要素を書き換える関数
+            function myFunc(argArray) {
+                argArray[0] = 'xxx';
+            }
+
+            // 配列を作り、関数に渡す
+            let item = ['コーヒー', '紅茶', '煎茶'];
+            myFunc(item);
+
+            // コンソールに出力
+            console.log(item);
+        </script>
+    </body>
+</html>

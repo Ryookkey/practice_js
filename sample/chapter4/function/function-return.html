@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // 文字列をデコレートする関数(うまく動作しない)
+            function decorationMenu1(food) {
+                return
+                    `☆★☆${food}☆★☆`;
+            }
+
+            // 文字列をデコレートする関数(うまく動作する)
+            function decorationMenu2(food) {
+                return '☆★☆' + food + '☆★☆';
+            }
+
+            // 関数を呼び出して、戻り値を得る
+            const res1 = decorationMenu1('バナナサンデー');
+            const res2 = decorationMenu2('チョコサンデー');
+
+            // コンソールに出力
+            console.log(res1);
+            console.log(res2);
+        </script>
+    </body>
+</html>
